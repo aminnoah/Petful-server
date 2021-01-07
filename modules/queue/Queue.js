@@ -1,3 +1,6 @@
+const _Node = require('./node').default;
+
+
 class Queue {
   constructor() {
     this.first = null;
