@@ -1,4 +1,11 @@
-const _Node = require('./node').default;
+//const _Node = require('./node').default;
+
+class _Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
 
 
 class Queue {

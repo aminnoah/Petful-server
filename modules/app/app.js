@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const store = require('../../store');
-const { NODE_ENV } = require('../../config');
+const { NODE_ENV } = require('../config');
 const petRouter = require('../pets/pets.router');
 const peopleRouter = require('../people/people.router');
 const app = express();
@@ -18,6 +18,7 @@ app.use(express.json());
 
 app.use('/people', peopleRouter);
 app.use('/pets', petRouter);
+// app.use('/')
 app.use((err, req, res, next) => {
   console.log(err);
   if (err.status) {
