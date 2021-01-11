@@ -11,7 +11,6 @@ store.people.forEach(person => people.enqueue(person))
 
 module.exports = {
   get() {
-    console.log(people.all)
     return people.all();
   },
 
