@@ -84,7 +84,6 @@ module.exports = {
       name: 'Smelly',
       story: 'Owner Passed away'
     },
-
     {
       age: 3,
       breed: 'Terrier',
