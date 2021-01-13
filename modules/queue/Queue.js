@@ -35,18 +35,37 @@ class Queue {
 
   show() {
     if (this.first.value !== null) return this.first.value;
-    return null;
+    // return null;
   }
 
   all() {
+
     if (this.first === null) return false;
     let current = this.first;
     const tempArray = [];
+    if(!current.next){
+      tempArray.push(this.first)
+      return tempArray}
     while (current) {
       tempArray.push(current.value);
       current = current.next;
     }
     return tempArray;
+
+
+
+
+
+
+  //   if (this.first === null) return false;
+  //   let current = this.first;
+  //   console.log(current, 'This is the current server')
+  //   const tempArray = [];
+  //   while (current) {
+  //     tempArray.push(current.value);
+  //     current = current.next;
+  //   }
+  //   return tempArray;
   }
 }
 

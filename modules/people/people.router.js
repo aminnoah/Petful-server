@@ -1,3 +1,5 @@
+
+
 const express = require('express')
 const json = require('body-parser').json()
 
@@ -8,7 +10,12 @@ const router = express.Router()
 router
   .route('/')
   .get((req, res) => {
-    res.json(People.get());
+    if (!People) {
+      return req.status(400).error({
+        error: 'No People'
+      });
+    }
+    return res.json(People.get());
   })
   .post(json, (req, res) => {
     const { person } = req.body;

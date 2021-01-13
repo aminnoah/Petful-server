@@ -20,5 +20,8 @@ module.exports = {
 
   dequeue(person) {
     return people.dequeue(person);
+  },
+  show() {
+    return people.show();
   }
 };
