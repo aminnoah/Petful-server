@@ -1,5 +1,5 @@
 # Petful
-+ Link to[Live](https://petful-client-bice.vercel.app/)
++ Link to [Petful live](https://petful-client-bice.vercel.app/)
 + Link to Server: [Petful Server Github](https://github.com/aminnoah/Petful-server)
 + Link to Client: [Petful Client Github](https://github.com/aminnoah/Petful-client)
 
